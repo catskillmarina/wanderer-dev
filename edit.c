@@ -20,6 +20,7 @@
 ***************************************************************************/
 
 
+#include <stdlib.h>
 #include "wand_head.h"
 
 extern char *playscreen();
