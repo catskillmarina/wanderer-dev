@@ -11,7 +11,7 @@ OBJ = monsters.o m.o save.o jump.o display.o icon.o game.o read.o help.o fall.o 
 LIBS = -lcurses
 #CC = cc
 
-all:	wanderer
+all:	wanderer convert
 	@echo DONE
 
 wanderer:	$(OBJ)
