@@ -23,11 +23,11 @@ convert: convert.c wand_head.h
 $(OBJ): wand_head.h
 
 install: 
-	install -m 0755 -d -o root -g games ${DESTDIR}/usr/local/share/wanderer
-	install -m 0755 -d -o root -g games ${DESTDIR}/usr/local/share/wanderer/screens
-	install -m 0644 -o root -g games ./screens/* ${DESTDIR}/usr/local/share/wanderer/screens/
-	install -m 2755 -o root -g games ./wanderer ${DESTDIR}/usr/local/bin/
-	install -m 0644 -o root -g games wanderer.6 ${DESTDIR}/usr/local/man/man6/
+	install -m 0755 -d -o root -g games /usr/local/share/wanderer
+	install -m 0755 -d -o root -g games /usr/local/share/wanderer/screens
+	install -m 0644 -o root -g games ./screens/* /usr/local/share/wanderer/screens/
+	install -m 2755 -o root -g games ./wanderer /usr/local/bin/
+	install -m 0644 -o root -g games wanderer.6 /usr/local/man/man6/
 
 clean:
 	rm *.o
